@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "name": "Traveler",
+  "description": "Your new awesome Open Web App",
+  "launch_path": "/www/index.html",
+  "icons": {
+    "64": "/icons/icon-64.png",
+    "128": "/icons/icon-128.png"
+  },
+  "developer": {
+    "name": "Nedim Muminovic",
+    "url": ""
+  },
+  "default_locale": "en"
+}

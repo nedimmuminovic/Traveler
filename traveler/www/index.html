@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+    	
+		<script>
+        	checkConnection();
+     		function showAlert() {
+        		alert(
+            			'Check your connection and try again!',          
+            			'Alert',           
+            			'Ok'                 
+        		);
+        		window.close();
+
+    		}
+
+    		function checkConnection() {
+    			/*
+        		var connection = window.navigator.mozConnection;
+        		var online = connection.bandwidth;
+        		if (online == 0 || !isFinite(online)) {
+        			showAlert();
+        		*/
+        		
+        		var online = window.navigator.onLine;
+        		if (!online) {
+        			showAlert();
+
+        		}
+
+    		}
+
+	    </script>
+	</head>
+ 
+	<body> 
+		<div data-role="page">
+			<div data-role="header">
+			<h1>Choose option:</h1>
+		</div>
+
+		<div data-role="content">		
+			<div data-role="controlgroup">
+				<a href="map.html" rel="external" data-role="button">Planning travel</a>
+				<a href="places.html" rel="external" data-role="button">Places</a>
+				<a href="help.html" rel="external" data-role="button">Help</a>
+				<a href="about.html" rel="external" data-role="button">About</a>
+			</div>
+
+		</div>
+
+		<div data-role="footer">
+			<h4>Traveler 1.0</h4>
+		</div>
+		</div>
+
+	</body>
+</html>
